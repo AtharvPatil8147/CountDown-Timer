@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width:640px){
+    .contentContainer{
+        width:90%;
+
+        margin: 10px auto;
+        padding:10px;
+        box-shadow: 0 0 30px black;
+        border-radius: 5px;
+    }
+
+    .individualdishCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:20px;
+        background-color: rgb(242, 242, 242);
+        padding:10px;
+        border-radius: 5px;
+    }
+    .rightBox{
+        order:-1;
+    }
+}
+
+header{
+    position:sticky;
+    top:0;
+}
+
+
+.container{
+    width:100vw;
+    overflow-x: none;
+}
+
+.navContainer{
+    
+    background-image: radial-gradient( circle 708px at 0% 3.4%,  rgba(254,216,7,1) 14.5%, rgba(249,69,28,1) 71.8% );
+    min-height:80px;
+    align-items: center;
+    padding:10px;
+    position:sticky;
+    top:0;
+
+}
+
+#navList{
+    list-style:none;
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+    align-items: center;
+    
+}
+
+#mainNavFont{
+    font-size:2.5rem;
+    font-weight: 600;
+}
+
+.navitems{
+    font-size:1.5rem;
+    
+}
+
+.navitems a{
+    text-decoration: none;
+    color:azure;
+    margin:10px;
+}
+
+.footContainer{
+    width:100%;
+    background-color: darkgoldenrod;
+    font-size:small;
+    padding:5px;
+    align-items: center;
+}
+
+.contentContainer{
+    width:70%;
+
+    margin: 20px auto;
+    padding:20px;
+    box-shadow: 0 0 30px black;
+    border-radius: 5px;
+}
+
+.dishCards{
+    display: flex;
+    flex-direction:column;
+    gap:40px;
+    padding: 20px;
+}
+
+.individualdishCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+    background-color: rgb(242, 242, 242);
+    padding:10px;
+    border-radius: 5px;
+}
+
+.rightBox img{
+    height:15rem;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 10px black;;
+}
+.rightBox img:hover{
+    transform: scale(1.05);
+}
+
+.leftBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    padding:10px;
+}
+
+.dheading{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin:10px;
+    margin-bottom: 30px;
+}
+
+
+.dingredients{
+    font-size: 0.9 rem;
+    font-weight: 400;
+    margin:10px;
+}
+.dingredients h3{
+    font-weight: 500;
+}
+
+.drecipe{
+    font-size: 0.9 rem;
+    font-weight: 400;
+    margin:10px;
+}
+.drecipe h3{
+    font-weight: 500;
+}

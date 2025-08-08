@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;;
+}
+
+
+
+body{
+    background-color:rgb(239, 239, 239);
+}
+
+.container{
+    max-width:70vw;
+    margin:1rem auto;
+    padding: 2rem 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.headerContainer{
+    margin-bottom:2.5rem;
+}
+
+.headerTitle{
+    margin-bottom:1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.headerDesc{
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(107, 107, 107);
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.mainContainer{
+    display:grid;
+    gap:1.5rem;
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(150px,200px));
+    justify-content: center;
+}
+/* @media (min-width:650px){
+    .mainContainer{
+        display:grid;
+        gap:1.5rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:1080px){
+    .mainContainer{
+        display:grid;
+        gap:1.5rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width:1340px){
+    .mainContainer{
+        display:grid;
+        gap:1.5rem;
+        grid-template-columns: repeat(4,1fr);
+    }
+} */
+
+.cardContainer
+{
+    display: flex;
+    flex-direction:column;
+    border:1px solid rgb(177, 177, 177);
+    border-radius:10px;
+    position:relative;
+    overflow: hidden;
+}
+
+.cardContainer:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    .cardImg{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
+
+.cardImg{
+    /* position: absolute; */
+    object-fit:cover;
+    object-position: center;
+    width: 100%;
+}
+
+.carTitleContainer{
+    display:flex;
+    flex-direction: column;
+    margin: 0.3rem;
+}
+
+.cardTitle{
+    font-size: 80%;
+    color:black;
+    margin: 0.4rem 0;
+}
+.cardTitle:hover{
+    color:blue;
+    text-decoration: underline ;
+}
+
+.cardDesc{
+    color: rgb(107, 107, 107);
+    font-size:60%;
+
+}
+
+.cardFooterContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.5rem;
+}
+
+.authorContainer{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap:0.5rem;
+    
+}
+
+.authorAvatarContainer{
+    height: 2rem;
+    width:2rem;
+    border:1px solid rgb(108, 108, 108);
+    border-radius:50%;
+    overflow: hidden;
+    background-color: rgb(235, 235, 235);
+}
+
+.authorInfoContainer{
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTagContainer{
+    font-size:50%;
+    border:1px solid rgb(177, 177, 177);
+    border-radius: 0.2rem;
+    padding:0.1rem;
+    color: rgb(107, 107, 107);
+}
+
+.authorName{
+    color:rgb(49, 49, 255)
+}
+
+.postDate{
+    color: rgb(107, 107, 107);
+}
+
+.footContainer{
+    width:100%;
+    background-color: rgb(209, 209, 209);
+    font-size:0.6rem;
+    font-weight: 100;
+    padding:0.2rem;;
+    padding-left: 0.8rem;;
+    align-items: center;
+    
+}
+
+footer{
+    position: sticky;
+    bottom:0;
+}

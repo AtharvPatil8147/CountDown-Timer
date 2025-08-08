@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+}
+
+.container{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(90deg, rgba(36, 51, 116, 1.000) 0.000%, rgba(43, 67, 173, 1.000) 16.667%, rgba(49, 86, 218, 1.000) 33.333%, rgba(57, 107, 244, 1.000) 50.000%, rgba(64, 127, 248, 1.000) 66.667%, rgba(72, 146, 231, 1.000) 83.333%, rgba(79, 162, 193, 1.000) 100.000%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.card{
+    width:50%;
+    height:80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.card img{
+    height: 70%;
+    width:auto;
+    border-radius: 10px;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.card h1{
+    margin:5px;
+    font-weight: 500;
+    text-align:center;
+    font-size: 200%;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.card p{
+    margin:5px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 100%;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#btn{
+    width:90%;
+}
