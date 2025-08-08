@@ -1,4 +1,4 @@
-const endDate = new Date("13 aug 2025 00:00:00").getTime();
+const endDate = new Date("12 aug 2025 00:00:00").getTime();
 const startDate = new Date().getTime();
 
 
@@ -45,4 +45,5 @@ let x = setInterval(function updateTimer() {
         document.getElementById("countdown").innerHTML = "Countdown Finished!";
         document.getElementById('progress-bar').style.width = '100%';
     }
+
 }, 1000); // Update every second
